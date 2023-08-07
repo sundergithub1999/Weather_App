@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background: linear-gradient(to top left, #9d9693, rgb(0, 0, 0));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: linear-gradient(to bottom right, aqua, rgb(132, 81, 198));
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 90%;
+    margin: 40px auto 0;
+    padding: 25px 35px;
+}
+
+.searchBar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input {
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    margin-right: 5px;
+    color: black;
+
+}
+
+::placeholder {
+    color: gray;
+    opacity: 0.6;
+}
+
+.searchBar button {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.6);
+}
+
+.searchBar button img {
+    width: 12px;
+    align-content: center;
+    border-radius: 50%;
+    transition: transform 0.5s;
+}
+
+.searchBar button  :hover{
+    transform: scale(0.8);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.weather img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather h1 {
+    font-size: 2.1rem;
+}
+
+.weather h2 {
+    font-size: 16px;
+    margin-block: 5px;
+}
+
+.details {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 3px;
+}
+
+.col img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    filter: contrast(200%);
+}
+
+.col p {
+    font-size: 10px;
+    font-weight: 700;
+    margin-right:30px;
+    width: 60px;
+}
+
+.weather{
+    display: none;
+}
+
+.error p {
+    font-size: 12px;
+    color: rgb(183, 232, 133);
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 3px;
+    text-align: start;
+    padding-left: 5px;
+    display: none;
+}
